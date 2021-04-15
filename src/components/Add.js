@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { ADD } from "./actions";
-import { useDispatch } from "./context";
+import { ADD } from "../actions";
+import { useDispatch } from "../context";
 
-export default () => {
+const Add = () => {
   const [newToDo, setNewToDo] = useState("");
   const dispatch = useDispatch();
   const onSubmit = (e) => {
@@ -27,3 +27,5 @@ export default () => {
     </form>
   );
 };
+
+export default Add;
